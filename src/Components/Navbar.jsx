@@ -1,3 +1,8 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap')
+</style>
+
+
 import { useState } from "react";
 import React  from 'react'
 import { FaBars  , FaTimes } from "react-icons/fa";
@@ -33,9 +38,9 @@ const links=[
 
   
   return (
-    <div className='flex items-center justify-between w-full h-20 p-4 text-white bg-black'>
+    <div className='fixed z-10 flex items-center justify-between w-full h-20 p-4 text-white bg-black'>
       <div>
-        <h1 className='ml-2 text-5xl '>Roshan</h1>
+        <h1 className='ml-2 text-2xl header md:text-5xl'>Roshan Patle</h1>
       </div>
       <ul className='hidden md:flex '> 
       { links.map(({id , link})=>(

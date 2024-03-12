@@ -6,7 +6,7 @@ function Home() {
     <div name="home" className="w-full h-screen bg-gradient-to-b from-black to-gray-800">
       <div className="flex flex-col items-center justify-center h-full max-w-screen-lg px-4 pt-16 mx-auto overflow-hidden md:flex-row">
         <div className="flex flex-col justify-center mb-8 md:h-full">
-          <h2 className="pb-4 overflow-y-hidden text-4xl font-bold text-white sm:text-5xl">
+          <h2 className="pb-4 text-4xl font-bold text-white mt-44 ove32rflow-y-hidden sm:text-5xl">
             I am a Frontend Web Developer
           </h2>
           <p className="max-w-md py-4 overflow-y-hidden text-gray-500">
@@ -24,11 +24,11 @@ function Home() {
             </button>
           </div>
         </div>
-        <div className="">
+        <div className="mb-64 sm:mb-0">
           <img
             src={roshn_img}
             alt="my profile"
-            className="w-56 mx-auto rounded-2xl md:w-[20rem] "
+            className="w-56 mx-auto rounded-2xl md:w-[20rem]  "
           />
         </div>
       </div>
