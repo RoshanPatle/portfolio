@@ -6,6 +6,7 @@
 import { useState } from "react";
 import React  from 'react'
 import { FaBars  , FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 
 function Navbar() {
@@ -15,24 +16,45 @@ const [nav , setNav]=useState(false)
 const links=[
   {
     id:1,
-    link:'home'
+    link:'home',
+    id2:'home',
+    smooth:'true',
+    duration:500,
+    offcet:0,
+    
   }
 ,
   {
     id:2,
-    link:'about'
+    link:'about',
+    id2:'about',
+    smooth:'true',
+    duration:500,
+    offcet:0,
   },
    {
     id:3,
-    link:'portfolio'
+    link:'portfolio',
+    id2:'portfolio',
+    smooth:'true',
+    duration:500,
+    offcet:-250,
   } ,
   {
     id:4,
-    link:'Experties'
+    link:'Experties',
+    id2:'experties',
+    smooth:'true',
+    duration:500,
+    offcet:0,
   },
   {
     id:5,
-    link:'contact'
+    link:'contact',
+    id2:'contact',
+    smooth:'true',
+    duration:500,
+    offcet:-50,
   }
 ]
 
@@ -43,9 +65,9 @@ const links=[
         <h1 className='ml-2 text-2xl header md:text-5xl'>Roshan Patle</h1>
       </div>
       <ul className='hidden md:flex '> 
-      { links.map(({id , link})=>(
+      { links.map(({id , link, id2,smooth, duration, offcet})=>(
         <li  key={id} className='px-4 text-gray-500 capitalize duration-200 cursor-pointer hover:scale-110'>
-        {link}
+       <Link  to={id2} smooth={smooth} duration={duration} offset={offcet}>{link}</Link> 
           </li>
         
       )) }
