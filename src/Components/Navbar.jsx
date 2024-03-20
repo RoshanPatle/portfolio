@@ -80,9 +80,9 @@ const links=[
   nav&&
 <ul className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen bg-gradient-to-b from-black to-gray-800 ">
       
-{ links.map(({id , link})=>(
+{ links.map(({id , link , id2,smooth, duration, offcet})=>(
         <li  key={id} className='px-4 py-6 text-4xl capitalize cursor-pointer'>
-          {link}
+        <link  to={id2} smooth={smooth} duration={duration} offset={offcet}> {link}</link>  
         </li>
       )) }      
 </ul>
